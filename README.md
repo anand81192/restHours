@@ -4,7 +4,7 @@ It is ionic pwa project , will accept a csv file and date time object which will
 
 ## Installation
 
-Use the package manager [npm](https://nodejs.org/en/) to install foobar.
+Use the package manager [npm](https://nodejs.org/en/) to install ionic.
 
 Fisrt install node js  then
 
