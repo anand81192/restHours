@@ -1,7 +1,7 @@
 # Rest Hours
 
 It is ionic pwa project , will accept a csv file and date time object which will show available restaurants for given date and time
-
+## for demo CSV file please open sample_csv folder
 ## Installation
 
 Use the package manager [npm](https://nodejs.org/en/) to install ionic.
