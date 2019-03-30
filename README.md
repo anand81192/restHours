@@ -19,6 +19,9 @@ git clone https://github.com/anand81192/restHours.git
 ```bash
 cd restHours
 ```
+```bash
+npm install
+```
 
 ```bash
 ionic serve 
