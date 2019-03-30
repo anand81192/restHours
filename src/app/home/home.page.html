@@ -1,14 +1,32 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Find Open Restaurants
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-item>
+      <ion-label  color="primary" float> Browse The CSV file </ion-label>
+      <ion-input type="file" accept="text/csv" id="upload" (change)="loadCSVfile($event)" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" float>Date</ion-label>
+      <ion-datetime (ionChange)="loadDateTime($event)" display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-button color="primary" (click)="showOpenReast()">Show Open Restaurents</ion-button>
+    </ion-item>
   </div>
+  
+  <ion-list>
+    <ion-item  *ngFor ="let res of restaurantsOpend">
+      <ion-label> {{ res?.name }} </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+    
 </ion-content>
